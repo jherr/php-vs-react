@@ -1,0 +1,8 @@
+<h1>Pokemon</h1>
+<% @arrayData.each do |row| %>
+  <div style="display: flex;">
+    <% row.each do |value| %>
+      <div><%= value.is_a?(Array) ? value.join(', ') : value %></div>
+    <% end %>
+  </div>
+<% end %>
